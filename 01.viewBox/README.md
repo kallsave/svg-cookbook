@@ -1,9 +1,9 @@
 ## SVG 盒子容器和画布容器
 
 ```javascript
-<svg style="width:150px; height:300px" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
-  <circle cx="200" cy="200" r="200" fill="#fdd" stroke="none"></circle>
-</svg>
+  <svg style="width:150px; height:300px" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+    <circle cx="200" cy="200" r="200" fill="#fdd" stroke="none"></circle>
+  </svg>
 ```
 
 盒子容器 width,heigh

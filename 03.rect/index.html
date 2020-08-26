@@ -19,15 +19,17 @@
   const svg = createSVG()
   document.body.appendChild(svg)
 
-  const line = createSVGChildElement('line', {
-    x1: 0,
-    y1: 0,
-    x2: 200,
-    y2: 200,
-    stroke: '#fdd',
-    'stroke-width': 5
+  const rect = createSVGChildElement('rect', {
+    x: 10,
+    y: 10,
+    width: 100,
+    height: 100,
+    fill: '#fdd',
+    rx: 10,
+    ry: 40,
   })
-  svg.appendChild(line)
+
+  svg.appendChild(rect)
 
 </script>
 </html>

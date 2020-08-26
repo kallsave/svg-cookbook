@@ -19,15 +19,13 @@
   const svg = createSVG()
   document.body.appendChild(svg)
 
-  const line = createSVGChildElement('line', {
-    x1: 0,
-    y1: 0,
-    x2: 200,
-    y2: 200,
+  const path = createSVGChildElement('path', {
+    d: 'M50,50 L100,100',
     stroke: '#fdd',
-    'stroke-width': 5
+    'stroke-width': '5'
   })
-  svg.appendChild(line)
+
+  svg.appendChild(path)
 
 </script>
 </html>
