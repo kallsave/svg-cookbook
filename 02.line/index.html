@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+<script src="../lib/svg.js"></script>
+<script>
+  const svg = createSVG()
+  body.appendChild(svg)
+
+  createSVGChildElement(svg, 'line', {
+    x1: 0,
+    y1: 0,
+    x2: 200,
+    y2: 200,
+    stroke: 'peru',
+    strokeWidth: 5
+  })
+
+</script>
+</html>
