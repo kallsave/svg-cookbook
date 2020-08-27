@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+<script src="../lib/svg.js"></script>
+<script>
+  const svg = createSVG()
+  document.body.appendChild(svg)
+
+  const data = [
+    [50, 160],
+    [55, 180],
+    [70, 180],
+    [60, 190],
+    [65, 205],
+    [50, 195],
+    [35, 205],
+    [40, 190],
+    [30, 180],
+    [45, 180],
+  ]
+
+  const points = data.map((item) => {
+    return `${item[0]} ${item[1]}`
+  }).join(',')
+
+
+  const polyline = createSVGChildElement('polyline', {
+    points,
+    fill: 'transparent',
+    stroke: 'gold',
+  })
+
+  svg.appendChild(polyline)
+
+  // polygon和polyline类似,区别是ploygon路径最后一个点自动连到第一个点
+  // const polygon = createSVGChildElement('polygon', {
+  //   points,
+  //   fill: 'transparent',
+  //   stroke: 'gold',
+  // })
+
+  // svg.appendChild(polygon)
+
+</script>
+
+</html>
