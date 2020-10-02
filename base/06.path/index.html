@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+</body>
+<script src="../lib/svg.js"></script>
+<script>
+  const svg = createSVG({
+    width: 1000,
+    height: 1000
+  })
+  document.body.appendChild(svg)
+
+  const center = {
+    x: 500,
+    y: 500
+  }
+
+  const data = [
+    {
+      angle: 0,
+      width: 200,
+      height: 200,
+    },
+    {
+      angle: 90,
+      width: 200,
+      height: 200,
+    },
+  ]
+
+  const singlePathData = {
+    width: 200,
+    height: 200,
+  }
+
+  function drawSinglePath(center, data ) {
+    const drawData = []
+
+    for (const item of data) {
+      const xHalf = width / 2
+      const yHalf = height / 2
+      const xStart = center.x - xHalf
+      const y = center.y = yHalf
+      const d = `M${x} ${y}`
+    }
+  }
+
+  const path = createSVGChildElement('path', {
+    d: 'M200 300 L200 100 L400 100 L400 300',
+    stroke: '#fdd',
+    'stroke-width': '5',
+    fill: 'red',
+    fill: 'transparent'
+  })
+
+  const g = createSVGChildElement('g')
+  g.appendChild(path)
+
+  svg.appendChild(g)
+
+</script>
+</html>

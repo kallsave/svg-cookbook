@@ -3,11 +3,12 @@ const SVG_URL = 'http://www.w3.org/2000/svg'
 function createSVG(attrs = {}) {
   const el = document.createElementNS(SVG_URL, 'svg')
   const defaultAttrs = {
+    version: '1.1',
 		width: 400,
     height: 400,
     viewBox: '0 0 400 400',
   }
-  Object.assign(attrs, defaultAttrs)
+  Object.assign(defaultAttrs, attrs)
 	setAttribute(el, attrs)
   return el
 }
