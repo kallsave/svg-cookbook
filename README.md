@@ -2,28 +2,28 @@
 
 1.viewBox
 ----------
-[viewBox](https://github.com/kallsave/svg-cookbook/tree/master/01.viewBox)
+[viewBox](https://github.com/kallsave/svg-cookbook/tree/master/base/01.viewBox)
 
 2.line
 ----------
-[line](https://github.com/kallsave/svg-cookbook/tree/master/02.line)
+[line](https://github.com/kallsave/svg-cookbook/tree/master/base/02.line)
 
 3.rect
 ----------
-[rect](https://github.com/kallsave/svg-cookbook/tree/master/03.rect)
+[rect](https://github.com/kallsave/svg-cookbook/tree/master/base/03.rect)
 
 4.circle
 ----------
-[circle](https://github.com/kallsave/svg-cookbook/tree/master/04.circle)
+[circle](https://github.com/kallsave/svg-cookbook/tree/master/base/04.circle)
 
 5.ellipase
 ----------
-[ellipase](https://github.com/kallsave/svg-cookbook/tree/master/05.ellipase)
+[ellipase](https://github.com/kallsave/svg-cookbook/tree/master/base/05.ellipase)
 
 6.path
 ----------
-[path](https://github.com/kallsave/svg-cookbook/tree/master/06.path)
+[path](https://github.com/kallsave/svg-cookbook/tree/master/base/06.path)
 
 7.polyline and polygon
 ----------
-[polyline and polygon](https://github.com/kallsave/svg-cookbook/tree/master/07.polyline)
+[polyline and polygon](https://github.com/kallsave/svg-cookbook/tree/master/base/07.polyline)
