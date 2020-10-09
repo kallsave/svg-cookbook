@@ -30,10 +30,10 @@
 ----------
 [polyline and polygon](https://github.com/kallsave/svg-cookbook/tree/master/base/07.polyline)
 
+<br>
+<br>
 
-##
-actions
-
+## actions
 1.subway
 ----------
 [subway](https://github.com/kallsave/svg-cookbook/tree/master/actions/subway)
