@@ -2,7 +2,7 @@
   "name": "subway",
   "version": "1.0.0",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "README.md",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build": "cross-env NODE_ENV=production node build/build.js"
@@ -11,9 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hammerjs": "^2.0.8",
     "jsonp": "^0.2.1",
-    "panzoom": "^9.2.5",
     "svg-pan-zoom": "^3.6.1"
   },
   "devDependencies": {
