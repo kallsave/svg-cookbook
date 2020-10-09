@@ -1,6 +1,6 @@
-# svg cookbook
+# SVG cookbook
 
-## base
+## Base
 
 1.viewBox
 ----------
@@ -33,7 +33,7 @@
 <br>
 <br>
 
-## actions
+## Actions
 1.subway
 ----------
 [subway](https://github.com/kallsave/svg-cookbook/tree/master/actions/subway)
