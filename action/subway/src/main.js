@@ -11,8 +11,7 @@ const exImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4i
 // eslint-disable-next-line
 new Page({
   data() {
-    return {
-    }
+    return {}
   },
   mounted() {
     this.app = document.getElementById('app')
@@ -23,7 +22,7 @@ new Page({
     this.svg.appendChild(this.g)
     this.app.appendChild(this.svg)
 
-    getSubWay(340).then((res) => {
+    getSubWay(131).then((res) => {
       this.redraw(res)
     })
 
@@ -68,9 +67,9 @@ new Page({
     drawLine(lineList) {
       for (const line of lineList) {
         const { l_xmlattr: lineAttr, p } = line
-        const { lb, lc, lbx, lby } = lineAttr
+        const { lb: lineName, lc: lineColor, lbx: lineX, lby: lineY } = lineAttr
         let d = ''
-        const stroke = `#${lc.split('x')[1]}`
+        const stroke = `#${lineColor.split('x')[1]}`
         for (let i = 0; i < p.length; i++) {
           const station = p[i].p_xmlattr
           const { x, y } = station
@@ -88,13 +87,13 @@ new Page({
         })
 
         const text = createSVGChildElement('text', {
-          x: lbx - 10,
-          y: lby + 15,
+          x: lineX - 10,
+          y: lineY + 15,
           stroke,
           'font-size': 16,
         })
 
-        text.textContent = lb
+        text.textContent = lineName
 
         this.g.appendChild(path)
         this.g.appendChild(text)
@@ -110,7 +109,7 @@ new Page({
         for (let i = 0; i < p.length; i++) {
           const station = p[i].p_xmlattr
           const uid = station.uid
-          const { x, y, rx, ry, lb, ex } = station
+          const { x, y, rx, ry, lb: stationName, ex } = station
 
           if (stationSet.has(uid)) {
             continue
@@ -143,7 +142,7 @@ new Page({
           const text = {
             x: x + rx + 2,
             y: y + ry + 12,
-            textContent: lb,
+            textContent: stationName,
           }
 
           stationList.push({

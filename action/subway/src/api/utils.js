@@ -3,7 +3,7 @@ import { parseParamUrl } from '../helpers/utils'
 
 // 把jsonp封装成类似axios的风格
 export function getJsonp(url, params) {
-  const options = { param: 'callback', timeout: 1000 }
+  const options = { param: 'callback', timeout: 10000 }
 
   url = parseParamUrl(url, params)
 
