@@ -16,6 +16,7 @@ new Page({
   mounted() {
     this.app = document.getElementById('app')
     this.svg = createSVG()
+    this.svg.style.cursor = 'pointer'
     this.g = createSVGChildElement('g', {
       'font-size': 10,
     })
