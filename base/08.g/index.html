@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .app {
+      width: 700px;
+      height: 500px;
+      background: peru;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="app"></div>
+</body>
+<script src="../lib/svg.js"></script>
+<script>
+  const wrapper = document.getElementById('app')
+
+  const width = 700
+  const height = 500
+
+  const svg = createSVG({
+    width,
+    height,
+  })
+  wrapper.appendChild(svg)
+
+  const g = createSVGChildElement('g')
+
+  svg.appendChild(g)
+
+  const circle1 = createSVGChildElement('circle', {
+    cx: 0,
+    cy: 0,
+    r: 50,
+    fill: '#fdd'
+  })
+
+  const circle2 = createSVGChildElement('circle', {
+    cx: 100,
+    cy: 0,
+    r: 50,
+    fill: 'red'
+  })
+
+  g.appendChild(circle1)
+  g.appendChild(circle2)
+
+  g.setAttribute('transform', `translate(${width / 2}, ${height / 2})`)
+
+</script>
+</html>

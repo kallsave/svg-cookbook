@@ -1,5 +1,11 @@
 ## polyline and polygon
 
+要点
+----------
+- points由一系列的点组成
+- 注意使用fill: 'transparent'透明化,不然默认fill: '#000'
+- polygon和polyline类似,区别是ploygon路径最后一个点自动连到第一个点
+
 实例
 ----------
 ```javascript
@@ -41,7 +47,3 @@
 
   // svg.appendChild(polygon)
 ```
-
-- points由一系列的点组成
-- 注意使用fill: 'transparent'透明化,不然默认fill: '#000'
-- polygon和polyline类似,区别是ploygon路径最后一个点自动连到第一个点
